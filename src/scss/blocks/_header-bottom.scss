@@ -1,0 +1,214 @@
+.nav {
+    font-size: var(--normal-font-size);
+    // .nav__catalog
+
+    &__catalog {}
+
+    // .nav__menu
+
+    &__menu {}
+
+    // .nav__icon
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+
+.catalog {
+    background-color: var(--menu-red);
+
+    // .catalog__btn
+
+    &__btn {
+        padding: 16px 22px 16px 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    // .catalog__line
+
+    &__line {
+        position: relative;
+        background-color: (--color-white);
+        transition: all 0.3s ease-in;
+        top: 0;
+        left: 0;
+
+        &::before {
+            top: 6px;
+            transition: all 0.3s ease-in;
+        }
+
+        &::after {
+            bottom: 6px;
+            transition: all 0.3s ease-in;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            transition: all 0.3s ease-in;
+            left: 0;
+        }
+
+    }
+
+    &__line,
+    &__line::before,
+    &__line::after {
+        background-color: var(--color-white);
+        width: 18px;
+        height: 2px;
+    }
+
+    // .catalog__text
+
+    &__text {
+        margin-left: 11px;
+        color: var(--color-white);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    color: var(--gray-light);
+    // .menu__item
+
+    &__item {
+        position: relative;
+        padding: 15px 12px 15px 12px;
+        cursor: pointer;
+
+        &--red {
+            text-transform: uppercase;
+            font-weight: var(--font-medium);
+            color: var(--menu-red);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 2px;
+            width: 0;
+            background: var(--first-color-red);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    &__item--active {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            right: -12px;
+            bottom: 0;
+            border-bottom: 2px solid var(--first-color-red);
+        }
+    }
+
+    // .menu__link
+
+    &__link {
+        white-space: nowrap;
+    }
+}
+
+.nav-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 13px 0 13px;
+    height: 23px;
+
+    &+.nav-icon {
+        margin-left: 20px;
+    }
+
+    // .nav-icon__like
+
+    &__like {}
+
+    &__like,
+    &__cart {}
+
+    // .nav-icon__cart
+
+    &__cart {}
+
+    // .nav-icon__count 
+
+    &__count {
+        content: '';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -1px;
+        right: -4px;
+        width: 16px;
+        height: 16px;
+        font-size: 0.5rem;
+        background-color: var(--first-color-red);
+        color: var(--color-white);
+        border-radius: 50%;
+        border: 2px solid var(--bg-gray);
+    }
+
+    // .nav-icon__user
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    // .nav-icon__text
+
+    &__text {
+        margin-left: 10px;
+        color: var(--first-color-red);
+        font-size: var(--normal-font-size);
+    }
+}
+
+// .menu-mobile media
+.menu-mobile {
+    display: none;
+}
+
+.catalog__btn--close .catalog__line {
+    background-color: transparent;
+    
+    &::before {
+        left: 0;
+        top: 0;
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in;
+    }
+    &::after {
+        top: 0;
+        left: 0;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in;
+    }
+}

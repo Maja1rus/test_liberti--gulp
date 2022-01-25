@@ -1,0 +1,258 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    grid-gap: 1px;
+    background: #E8E8E8;
+    border: 1px solid #E8E8E8;
+
+    // .card__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid #E8E8E8;
+        background: #fff;
+        border: none;
+        height: 100vh;
+        transition: all 0.2s ease-in;
+        height: 703px;
+
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(37, 40, 43, 0.2);
+        }
+    }
+
+    // .card__img
+
+    &__img {
+        display: block;
+        padding: 20px 0 24px;
+        margin: 0 auto;
+    }
+
+    // .card__text
+
+    &__text {
+        padding: 0 20px;
+    }
+
+    // .card__article
+    &__article {
+        color: #A0A4A8;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+
+    &__article,
+    &__title {
+        font-size: var(--normal-font-size);
+        line-height: 1.3;
+    }
+
+    // .card__title
+
+    &__title {
+        color: var(--title-color);
+        margin-bottom: 14px;
+    }
+
+    // .card__bulk
+
+    &__bulk {
+        color: #1a8bff;
+        margin-bottom: 3px;
+    }
+
+    &__bulk,
+    &__price {
+        display: block;
+        font-size: var(--big-font-size);
+    }
+
+    // .card__price
+
+    &__price {
+        color: var(--first-color-red);
+        margin-bottom: 20px;
+        font-weight: var(--font-medium);
+    }
+
+    // .card__btn-wrap
+
+    &__btn-wrap {
+        display: flex;
+        align-items: center;
+        padding: 0 24px 0 20px;
+        margin-bottom: 23px;
+
+    }
+
+    // // .card__more
+
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        height: 46px;
+        border: 1px solid #E8E8E8;
+        color: var(--title-color);
+        background-color: var(--bg-filter);
+        margin-bottom: 32px;
+    }
+
+    // // .card__pagination
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.card-btn {
+
+    // .card-btn__cart
+
+    &__cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 148px;
+        font-size: 1rem;
+        margin-right: 20px;
+
+        &:hover {
+            border: none;
+            color: var(--color-white);
+            background-color: var(--first-color-red);
+        }
+    }
+
+    &__cart,
+    &__like {
+        height: 36px;
+        border: 1px solid #E8E8E8;
+        border-radius: 2px;
+        transition: all .2s ease;
+    }
+
+    // .card-btn__like
+
+    &__like {
+        display: flex;
+        align-items: center;
+        padding: 0 13px;
+        font-size: 0;
+
+        svg {
+            stroke: #A0A4A8;
+        }
+
+        &:hover {
+            background-color: var(--first-color-red);
+
+            svg {
+                stroke: #fff;
+            }
+        }
+
+        &--active {
+            border-color: var(--first-color-red);
+
+            svg {
+                stroke: var(--first-color-red)
+            }
+        }
+    }
+}
+
+.card-pagination {
+
+    // .card-pagination__item
+
+    &__item+&__item {
+        margin-left: 21px;
+    }
+
+    // .card-pagination__link
+
+    &__link {}
+}
+
+.link--active {
+    color: var(--color-white);
+    background-color: var(--first-color-red);
+}
+
+.link--hover {
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--first-color-red);
+    }
+}
+
+.link--number {
+    padding: 2px 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+
+}
+
+.link--disable .link--number {
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.link--disable {
+    color: #A0A4A8;
+
+    &:hover {
+        background-color: none;
+    }
+}
+
+.link--text {
+    color: var(--first-color-red);
+}
+
+.link--prev {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+        content: '';
+        bottom: -11px;
+        right: 0;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url('.././img/icon/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: center;
+        transform: rotate(90deg);
+    }
+}
+
+.link--next {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+        content: '';
+        bottom: -10px;
+        left: 0;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url('.././img/icon/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: center;
+        transform: rotate(-90deg);
+    }
+}

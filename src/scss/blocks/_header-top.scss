@@ -1,0 +1,154 @@
+.logo {
+
+    // .logo__link
+
+    &__link img{
+        margin-right: 37px;
+
+    }
+}
+
+.location {
+    margin-right: 36px;
+    font-size: var(--normal-font-size);
+
+    // .location__title
+
+    &__title {
+        font-size: var(--small-font-size);
+        color: var(--gray-light);
+    }
+
+    // .location__map
+
+    &__map {
+        display: flex;
+        align-items: center;
+    }
+
+    // .location__name
+
+    &__name {
+        position: relative;
+        margin-left: 6px;
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        color: var(--first-color-red);
+        white-space: nowrap;
+        &::before{
+            content: '';
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            position: absolute;
+            border-bottom: 1px dashed var(--menu-red);
+        }
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    width: 372px;
+    align-items: center;
+    background: #F9F9FA;
+    border: #F9F9FA;
+    border-radius: 2px;
+    margin-right: 36px;
+
+    // .seatch__input
+
+    &__input {
+        display: inline-block;
+        padding-left: 14px;
+        width: 90%;
+    }
+
+    // .seatch__btn
+
+    &__btn {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+    }
+}
+
+.work-mode {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-right: 36px;
+    color: var(--gray-light);
+
+    // .work-mode__title
+
+    &__title {}
+
+    // .work-mode__time
+
+    &__time {
+        white-space: nowrap;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    // .social__link
+
+    &__link {
+        transition: 0.3s ease;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__link + &__link {
+        margin-left: 10px;
+    }
+        
+}
+
+
+.city {
+    display: flex;
+    font-size: var(--small-font-size);
+
+    // .city__wrap
+    &__wrap {
+        max-width: 125px;
+    }
+
+    &__wrap+&__wrap {
+        margin-left: 42px;
+    }
+
+    // .city__title
+
+    &__title {
+        display: block;
+        color: var(--gray-light);
+
+    }
+
+    // .city__number
+
+    &__number {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-bold);
+        white-space: nowrap;
+    }
+
+    // .city__link
+
+    &__link {
+        color: var(--icon-text);
+    }
+}
+
+.nav__icon--mobile {
+    display: none;
+    margin-left: auto;
+}

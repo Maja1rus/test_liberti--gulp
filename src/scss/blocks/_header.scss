@@ -1,0 +1,22 @@
+.header {
+
+    // .header__top
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__bottom
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        margin-bottom: 40px;
+    }
+
+    &__mobile {
+        display: none;
+    }
+}

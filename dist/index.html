@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220125091523">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300;400;600;700&display=swap&_v=20220125091523"
+        rel="stylesheet">
+    <title>Сириус</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__mobile">
+    <div class="nav__catalog catalog">
+        <button id="catalog-mobile" class="catalog__btn ">
+            <span class="catalog__line"></span>
+        </button>
+    </div>
+    <a href="#" class="logo__link">
+        <picture><source srcset="img/icon/logo-mobile.webp"type="image/webp"><img src="img/icon/logo-mobile.jpg" alt="Сириус"></picture>
+    </a>
+    <div class="nav__icon">
+        <a href="#" class="nav-icon nav-icon__like">
+            <span class="nav-icon__count">0</span>
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.3666 2.84172C16.941 2.41589 16.4356 2.0781 15.8794 1.84763C15.3232 1.61716 14.727 1.49854 14.125 1.49854C13.5229 1.49854 12.9267 1.61716 12.3705 1.84763C11.8143 2.0781 11.3089 2.41589 10.8833 2.84172L9.99997 3.72506L9.11663 2.84172C8.25689 1.98198 7.09083 1.49898 5.87497 1.49898C4.65911 1.49898 3.49304 1.98198 2.6333 2.84172C1.77356 3.70147 1.29056 4.86753 1.29056 6.08339C1.29056 7.29925 1.77356 8.46531 2.6333 9.32506L3.51663 10.2084L9.99997 16.6917L16.4833 10.2084L17.3666 9.32506C17.7925 8.89943 18.1303 8.39407 18.3607 7.83785C18.5912 7.28164 18.7098 6.68546 18.7098 6.08339C18.7098 5.48132 18.5912 4.88514 18.3607 4.32893C18.1303 3.77271 17.7925 3.26735 17.3666 2.84172V2.84172Z"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#" class="nav-icon nav-icon__like">
+            <span class="nav-icon__count">0</span>
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.6667 18.3332C15.1269 18.3332 15.5 17.9601 15.5 17.4998C15.5 17.0396 15.1269 16.6665 14.6667 16.6665C14.2064 16.6665 13.8333 17.0396 13.8333 17.4998C13.8333 17.9601 14.2064 18.3332 14.6667 18.3332Z"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M9.50002 18.3332C9.96026 18.3332 10.3333 17.9601 10.3333 17.4998C10.3333 17.0396 9.96026 16.6665 9.50002 16.6665C9.03978 16.6665 8.66669 17.0396 8.66669 17.4998C8.66669 17.9601 9.03978 18.3332 9.50002 18.3332Z"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M1 1H4.33334L6.56667 12.1583C6.64287 12.542 6.85159 12.8866 7.15629 13.1319C7.46099 13.3772 7.84225 13.5075 8.23334 13.5H16.3333C16.7244 13.5075 17.1057 13.3772 17.4104 13.1319C17.7151 12.8866 17.9238 12.542 18 12.1583L19.3333 5.16666H5.16667"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#" class="nav-icon nav-icon__user">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.3334 15.5V13.8333C14.3334 12.9493 13.9822 12.1014 13.357 11.4763C12.7319 10.8512 11.8841 10.5 11 10.5H4.33333C3.44928 10.5 2.60143 10.8512 1.97631 11.4763C1.35119 12.1014 1 12.9493 1 13.8333V15.5"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M7.33334 7.66667C9.17428 7.66667 10.6667 6.17428 10.6667 4.33333C10.6667 2.49238 9.17428 1 7.33334 1C5.49239 1 4 2.49238 4 4.33333C4 6.17428 5.49239 7.66667 7.33334 7.66667Z"
+                    stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </div>
+</div>
+<ul class="header__mobile--menu">
+    <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+    <li class="menu__item menu__item--active"><a href="#" class="menu__link">О компании</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Скидки</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Дилеры</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+    <li class="menu__item menu__item--red"><a href="#" class="menu__link">Честный знак</a></li>
+</ul>
+    <div class="container">
+        <div class="header__top">
+             <a href="#" class="logo__link">
+    <picture><source srcset="img/icon/logo.webp"type="image/webp"><img src="img/icon/logo.jpg" alt="Сириус"></picture>
+</a>
+<div class="location">
+    <p class="location__title">Выберите ваш город:</p>
+    <button class="location__map">
+        <img src="img/icon/location.svg" alt="icon: Локация">
+        <span class="location__name">Санкт-Петербург</span>
+    </button>
+</div>
+<div>
+    <form action="" class="search">
+        <input class="search__input" name="s" placeholder="Поиск" type="search">
+        <button class="search__btn" type="submit"><img src="img/icon/search.svg" alt="icon: Поиск"></button>
+    </form>
+</div>
+<div class="work-mode">
+    <span class="work-mode__title">Режим работы</span>
+    <span class="work-mode__time">Пн-Пт с 8:00 — 18:00</span>
+</div>
+<div class="social">
+    <a href="#" class="social__link"><img src="img/social/fb.svg" alt="icon: Facebook"></a>
+    <a href="#" class="social__link"><img src="img/social/ig.svg" alt="icon: Instagram"></a>
+    <a href="#" class="social__link"><img src="img/social/vk.svg" alt="icon: ВКонтакте"></a>
+</div>
+<div class="city">
+    <div class="city__wrap">
+        <span class="city__title">г. Москва</span>
+        <a href="tel:+74957772345" class="city__number">+7 (495) 777-2345</a>
+        <a href="#" class="city__link">Заказать звонок</a>
+    </div>
+    <div class="city__wrap">
+        <span class="city__title">г. Ногинск</span>
+        <a href="tel:+74956004400" class="city__number">+7 (495) 600-4400</a>
+        <a href="#" class="city__link">Заказать звонок</a>
+    </div>
+</div>
+
+
+<!-- .nav__icon--mobile -->
+<div class="nav__icon--mobile">
+    <a href="#" class="nav-icon nav-icon__like">
+        <span class="nav-icon__count">0</span>
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.3666 2.84172C16.941 2.41589 16.4356 2.0781 15.8794 1.84763C15.3232 1.61716 14.727 1.49854 14.125 1.49854C13.5229 1.49854 12.9267 1.61716 12.3705 1.84763C11.8143 2.0781 11.3089 2.41589 10.8833 2.84172L9.99997 3.72506L9.11663 2.84172C8.25689 1.98198 7.09083 1.49898 5.87497 1.49898C4.65911 1.49898 3.49304 1.98198 2.6333 2.84172C1.77356 3.70147 1.29056 4.86753 1.29056 6.08339C1.29056 7.29925 1.77356 8.46531 2.6333 9.32506L3.51663 10.2084L9.99997 16.6917L16.4833 10.2084L17.3666 9.32506C17.7925 8.89943 18.1303 8.39407 18.3607 7.83785C18.5912 7.28164 18.7098 6.68546 18.7098 6.08339C18.7098 5.48132 18.5912 4.88514 18.3607 4.32893C18.1303 3.77271 17.7925 3.26735 17.3666 2.84172V2.84172Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <a href="#" class="nav-icon nav-icon__like">
+        <span class="nav-icon__count">0</span>
+        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.6667 18.3332C15.1269 18.3332 15.5 17.9601 15.5 17.4998C15.5 17.0396 15.1269 16.6665 14.6667 16.6665C14.2064 16.6665 13.8333 17.0396 13.8333 17.4998C13.8333 17.9601 14.2064 18.3332 14.6667 18.3332Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M9.50002 18.3332C9.96026 18.3332 10.3333 17.9601 10.3333 17.4998C10.3333 17.0396 9.96026 16.6665 9.50002 16.6665C9.03978 16.6665 8.66669 17.0396 8.66669 17.4998C8.66669 17.9601 9.03978 18.3332 9.50002 18.3332Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M1 1H4.33334L6.56667 12.1583C6.64287 12.542 6.85159 12.8866 7.15629 13.1319C7.46099 13.3772 7.84225 13.5075 8.23334 13.5H16.3333C16.7244 13.5075 17.1057 13.3772 17.4104 13.1319C17.7151 12.8866 17.9238 12.542 18 12.1583L19.3333 5.16666H5.16667"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <a href="#" class="nav-icon nav-icon__user">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.3334 15.5V13.8333C14.3334 12.9493 13.9822 12.1014 13.357 11.4763C12.7319 10.8512 11.8841 10.5 11 10.5H4.33333C3.44928 10.5 2.60143 10.8512 1.97631 11.4763C1.35119 12.1014 1 12.9493 1 13.8333V15.5"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M7.33334 7.66667C9.17428 7.66667 10.6667 6.17428 10.6667 4.33333C10.6667 2.49238 9.17428 1 7.33334 1C5.49239 1 4 2.49238 4 4.33333C4 6.17428 5.49239 7.66667 7.33334 7.66667Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="nav-icon__text">Войти</span></button>
+    </a>
+</div>
+        </div>
+    </div>
+    <div class="container__gray">
+        <div class="container">
+            <nav class="header__bottom nav">
+                <div class="mobile__catalog catalog">
+    <button id="catalog" class="catalog__btn">
+        <span class="catalog__line"></span>
+        <span class="catalog__text">Каталог</span>
+    </button>
+</div>
+<ul class="nav__menu menu">
+    <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+    <li class="menu__item menu__item--active"><a href="#" class="menu__link">О компании</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Скидки</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Дилеры</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+    <li class="menu__item menu__item--red"><a href="#" class="menu__link">Честный знак</a></li>
+</ul>
+<ul class="menu-mobile ">
+    <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+    <li class="menu__item menu__item--active"><a href="#" class="menu__link">О компании</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Скидки</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Дилеры</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+    <li class="menu__item menu__item--red"><a href="#" class="menu__link">Честный знак</a></li>
+</ul>
+<div class="nav__icon">
+    <a href="#" class="nav-icon nav-icon__like">
+        <span class="nav-icon__count">0</span>
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.3666 2.84172C16.941 2.41589 16.4356 2.0781 15.8794 1.84763C15.3232 1.61716 14.727 1.49854 14.125 1.49854C13.5229 1.49854 12.9267 1.61716 12.3705 1.84763C11.8143 2.0781 11.3089 2.41589 10.8833 2.84172L9.99997 3.72506L9.11663 2.84172C8.25689 1.98198 7.09083 1.49898 5.87497 1.49898C4.65911 1.49898 3.49304 1.98198 2.6333 2.84172C1.77356 3.70147 1.29056 4.86753 1.29056 6.08339C1.29056 7.29925 1.77356 8.46531 2.6333 9.32506L3.51663 10.2084L9.99997 16.6917L16.4833 10.2084L17.3666 9.32506C17.7925 8.89943 18.1303 8.39407 18.3607 7.83785C18.5912 7.28164 18.7098 6.68546 18.7098 6.08339C18.7098 5.48132 18.5912 4.88514 18.3607 4.32893C18.1303 3.77271 17.7925 3.26735 17.3666 2.84172V2.84172Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <a href="#" class="nav-icon nav-icon__like">
+        <span class="nav-icon__count">0</span>
+        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.6667 18.3332C15.1269 18.3332 15.5 17.9601 15.5 17.4998C15.5 17.0396 15.1269 16.6665 14.6667 16.6665C14.2064 16.6665 13.8333 17.0396 13.8333 17.4998C13.8333 17.9601 14.2064 18.3332 14.6667 18.3332Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M9.50002 18.3332C9.96026 18.3332 10.3333 17.9601 10.3333 17.4998C10.3333 17.0396 9.96026 16.6665 9.50002 16.6665C9.03978 16.6665 8.66669 17.0396 8.66669 17.4998C8.66669 17.9601 9.03978 18.3332 9.50002 18.3332Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M1 1H4.33334L6.56667 12.1583C6.64287 12.542 6.85159 12.8866 7.15629 13.1319C7.46099 13.3772 7.84225 13.5075 8.23334 13.5H16.3333C16.7244 13.5075 17.1057 13.3772 17.4104 13.1319C17.7151 12.8866 17.9238 12.542 18 12.1583L19.3333 5.16666H5.16667"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <a href="#" class="nav-icon nav-icon__user">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.3334 15.5V13.8333C14.3334 12.9493 13.9822 12.1014 13.357 11.4763C12.7319 10.8512 11.8841 10.5 11 10.5H4.33333C3.44928 10.5 2.60143 10.8512 1.97631 11.4763C1.35119 12.1014 1 12.9493 1 13.8333V15.5"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M7.33334 7.66667C9.17428 7.66667 10.6667 6.17428 10.6667 4.33333C10.6667 2.49238 9.17428 1 7.33334 1C5.49239 1 4 2.49238 4 4.33333C4 6.17428 5.49239 7.66667 7.33334 7.66667Z"
+                stroke="#A0A4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <span class="nav-icon__text">Войти</span></button>
+    </a>
+</div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="container filter">
+    <ol class="filter__path path">
+        <li class="path__item"><a href="#" class="path__link">Каталог товаров</a><span class="path__arrow">></span></li>
+        <li class="path__item"><a href="#" class="path__link">Спецодежда</a><span class="path__arrow">></span></li>
+        <li class="path__item"><a href="#" class="path__link">Спецодежда зимняя</a></li>
+    </ol>
+    <a href="#" class="path__mobile"><img src="img/icon/arrow.svg" alt="icon: назад">Назад</a>
+    <h2 class="filter__title">Спецодежда Зимняя</h2>
+    <div class="filter__wrap">
+        <label class="filter__categories">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Спецодежда с заключением Минпромторга</span>
+        </label>
+        <label class="filter__categories">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Костюмы женские</span>
+        </label>
+        <label class="filter__categories">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Костюмы мужские</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Костюмы сварщика</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Жилеты женские</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Жилеты мужские</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Жилеты зимние</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Брюки</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Куртки женские</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Куртки мужские</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Полукомбинезоны зимние</span>
+        </label>
+
+        <!-- hidden filter -->
+        <label class="filter__categories categories__hidden--mobile categories__hidden">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Костюмы сварщика</span>
+        </label>
+        <label class="filter__categories categories__hidden--mobile categories__hidden">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Жилеты женские</span>
+        </label>
+        <label class="filter__categories  categories__hidden--mobile categories__hidden">
+            <input class="filter__input" type="checkbox">
+            <span class="filter__check">Жилеты мужские</span>
+        </label>
+
+        <div class="filter__categories">
+            <button  class="filter__btn filter__btn--active">Показать ещё</button>
+        </div>
+    </div>
+</section>
+        <section class="container dropdown">
+    <div class="dropdown__wrapper">
+        <button class="dropdown__btn">
+            <span>По возрастанию цены</span>
+            <img class="dropdown__img" src="img/icon/arrow.svg" alt="icon: сортировка">
+        </button>
+        <div class="dropdown__content">
+            <a class="dropdown__link" href="#">По умолчанию</a>
+            <a class="dropdown__link" href="#">По популярности</a>
+            <a class="dropdown__link" href="#">По возрастанию цены</a>
+            <a class="dropdown__link" href="#">По убыванию цены</a>
+            <a class="dropdown__link" href="#">По новинкам</a>
+            <a class="dropdown__link" href="#">По скидке</a>
+            <a class="dropdown__link" href="#">По алфавиту</a>
+        </div>
+    </div>
+    <div class="filter__mobile">
+        <button class="filter__mobile--btn"><img src="img/icon/filter.svg" alt="icon: фильтер"><span>Фильтер</span></button>
+    </div>
+
+</section>
+        <section class="container content">
+    <div class="content__sidebar">
+        <aside class="sidebar sidebar__mobile">
+    <button class="sidebar__back">Фильтр</button>
+    <form >
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Цена, руб</div>
+            <div class="sidebar__price">
+                <div class="sidebar-price">
+                    <div class="sidebar-price__input">
+                        <span class="sidebar-price__text">от</span>
+                        <input type="number" class="sidebar-price__input-min" value="86">
+                    </div>
+                    <div class="sidebar-price__input">
+                        <span class="sidebar-price__text">до</span>
+                        <input type="number" class="sidebar-price__input-min" value="100000">
+                    </div>
+                </div>
+                <div class="sidebar-price__slider">
+                    <div class="sidebar-price__progress"></div>
+                </div>
+                <div class="sidebar-price__range">
+                    <input type="range" class="sidebar-price__range-min" min="0" max="100000" value="86">
+                    <input type="range" class="sidebar-price__range-max" min="0" max="100000" value="65000">
+                </div>
+            </div>
+            <!-- /.sidebar__price -->
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Вид изделия</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term" checked>
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Брюки</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term" disabled>
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Жилет</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Костюм</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Куртка</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Сезон</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Зима</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Торговая марка / Бренд</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">СИРИУС</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Пол</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Женский</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Мужской</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Универсальный</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Состав</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Брюки</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Жилет</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Костюм</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Куртка</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Ткань/Материал верха</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Брюки</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Жилет</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Костюм</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Куртка</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Утеплитель</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Брюки</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Жилет</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Костюм</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Куртка</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Назначение</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Брюки</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Жилет</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Костюм</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Куртка</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Полукомбинезон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+        <div class="sidebar__wrap">
+            <div class="sidebar__title">Цвет</div>
+            <div class="sidebar__checkbox">
+                <div class="checkbox">
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Бирюзовый</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Васильковый</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Красный</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Лимнонный</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Олива</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Оранжевый</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Серый</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Синий</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Черный, красный</span>
+                    </label>
+                    <label class="checkbox__item">
+                        <input type="checkbox" class="checkbox__real" name="term">
+                        <span class="checkbox__fake"></span>
+                        <span class="checkbox__title">Черный</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- /.sidebar__wrap -->
+
+        <div class="sidebar__btn">
+            <button class="sidebar-btn sidebar-btn__submit">Показать (123)</button>
+            <button type='reset' class="sidebar-btn">Сбросить</button>
+        </div>
+    </form>
+</aside>
+    </div>
+    <div class="content__card">
+        <div class="card">
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-01.webp"type="image/webp"><img src="img/card/card-01.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-02.webp"type="image/webp"><img src="img/card/card-02.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-03.webp"type="image/webp"><img src="img/card/card-03.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-04.webp"type="image/webp"><img src="img/card/card-04.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->   
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-01.webp"type="image/webp"><img src="img/card/card-01.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-02.webp"type="image/webp"><img src="img/card/card-02.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like card-btn__like--active">LIKE
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-03.webp"type="image/webp"><img src="img/card/card-03.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-04.webp"type="image/webp"><img src="img/card/card-04.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-01.webp"type="image/webp"><img src="img/card/card-01.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-02.webp"type="image/webp"><img src="img/card/card-02.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-03.webp"type="image/webp"><img src="img/card/card-03.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-04.webp"type="image/webp"><img src="img/card/card-04.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-01.webp"type="image/webp"><img src="img/card/card-01.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-02.webp"type="image/webp"><img src="img/card/card-02.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-03.webp"type="image/webp"><img src="img/card/card-03.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+    <a href="#" class="card__item">
+        <picture><source srcset="img/card/card-04.webp"type="image/webp"><img src="img/card/card-04.jpg" alt="image: Костюм СИРИУС-Горка куртка, брюки (гражданские размеры) КМФ Мультикам" class="card__img"></picture>
+        <div class="card__text">
+            <span class="card__article">Арт 1232425</span>
+            <h3 class="card__title">Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам</h3>
+            <span class="card__bulk">Опт 3144 ₽</span>
+            <span class="card__price">Розница 4235 ₽</span>
+        </div>
+        <div class="card__btn-wrap">
+            <form>
+                <button type="submit" formaction="#popup" class="card-btn__cart">В корзину</button>
+            </form>
+            <button class="card-btn__like">LIKE                
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.3667 2.84172C16.941 2.41589 16.4357 2.0781 15.8795 1.84763C15.3232 1.61716 14.7271 1.49854 14.125 1.49854C13.5229 1.49854 12.9268 1.61716 12.3705 1.84763C11.8143 2.0781 11.309 2.41589 10.8833 2.84172L10 3.72506L9.11667 2.84172C8.25692 1.98198 7.09086 1.49898 5.875 1.49898C4.65914 1.49898 3.49308 1.98198 2.63333 2.84172C1.77359 3.70147 1.29059 4.86753 1.29059 6.08339C1.29059 7.29925 1.77359 8.46531 2.63333 9.32506L3.51667 10.2084L10 16.6917L16.4833 10.2084L17.3667 9.32506C17.7925 8.89943 18.1303 8.39407 18.3608 7.83785C18.5912 7.28164 18.7099 6.68546 18.7099 6.08339C18.7099 5.48132 18.5912 4.88514 18.3608 4.32893C18.1303 3.77271 17.7925 3.26735 17.3667 2.84172V2.84172Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </a>
+    <!-- /.card__item -->
+</div>
+
+<div class="card__more">
+    <span>Показать еще</span>
+</div>
+
+<ul class="card__pagination">
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--prev"></a></li>
+    <li class="card-pagination__item"><a href="#"
+            class="card-pagination__link link--active link--number link--hover">1</a></li>
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--number link--hover">2</a></li>
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--number link--hover">3</a></li>
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--disable link--number">4</a></li>
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--text">Все</a></li>
+    <li class="card-pagination__item"><a href="#" class="card-pagination__link link--next"></a></li>
+</ul>
+    </div>
+</section>
+        <div id="popup" class="popup open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__title">
+                <span>Выбор опций</span>
+                <a href="#" class="popup__close close-popup">Закрыть</a>
+            </div>
+            <div class="popup__text">
+                <span>Размерный ряд</span>
+                <span>Количество</span>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <div class="popup__option">
+                <div class="popup-option__title">Размер 104-108, Рост 170-176 (Арт. 43585)</div>
+                <form class="popup-option__form">
+                    <input type="number" value="0">
+                    <button class="popup-option__plus">добавить</button>
+                    <button class="popup-option__minus">убавить</button>
+                </form>
+            </div>
+            <button class="popup__btn">Добавить в корзину</button>
+        </div>
+    </div>
+</div>
+    </main>
+    <footer class="footer">
+    <!-- footer__top -->
+    <div class="container__gray container__gray--line">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__wrap">
+                    <div class="footer__number">
+                        <a href="tel:+74957772345" class="footer__number--title">+7 (495) 777-2345</a>
+                        <a href="#" class="city__link">Заказать звонок</a>
+                    </div>
+                    <!-- /.footer__number -->
+                    <div class="footer__email">
+                        <a href="mailto:info@planeta-sirius.ru">info@planeta-sirius.ru</a>
+                    </div>
+                    <!-- /.footer__email -->
+                    <div class="footer__social">
+                        <div class="social">
+                            <a href="#" class="social__link"><img src="img/social/fb.svg" alt="icon: Facebook"></a>
+                            <a href="#" class="social__link"><img src="img/social/ig.svg" alt="icon: Instagram"></a>
+                            <a href="#" class="social__link"><img src="img/social/vk.svg" alt="icon: ВКонтакте"></a>
+                        </div>
+                    </div>
+                    <!-- /.footer__social -->
+                    <div class="footer__price">
+                        <button class="footer-price__btn">
+                            <img src="img/icon/excel.svg" alt="Скачать прайс-лист">
+                            <span>Скачать прайс-лист</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.footer__wrap -->
+                <div class="footer__wrap">
+                    <div class="footer__nav">
+                        <ul class="footer-nav">
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">каталог</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">СПЕЦОДЕЖДА</a></li>
+                            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Средства защиты рук</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Хозтовары и постельные принадлежности</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link footer-nav__link--red">Ликвидация</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.footer__nav -->
+                </div>
+                <!-- /.footer__wrap -->
+                <div class="footer__wrap">
+                    <div class="footer__nav">
+                        <ul class="footer-nav">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">обувь</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Средства индивидуальной защиты</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">жилеты на все случаи жизни</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">линия Plus</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.footer__nav -->
+                </div>
+                <!-- /.footer__wrap -->
+                <div class="footer__wrap">
+                    <div class="footer__newsletter">
+                        <p class="footer-newsletter__title">Подпишитесь на новости и акции и будьте в курсе всего!</p>
+                        <form class="footer-newsletter__form">
+                            <input type="email" class="footer-newsletter__input" placeholder="Введите свой e-mail">
+                            <button class="footer-newsletter__btn">
+                                <img src="img/icon/footer-newsletter.svg" alt="Подписаться на рассылку">
+                            </button>                            
+                        </form>
+                        <label class="footer-newsletter__checkbox">
+                            <input type="checkbox">
+                            <span>Я даю согласие на обработку персональных данных и соглашаюсь с правилами обработки персональных данных.</span>
+                        </label>
+
+                    </div>
+                    <!-- /.footer__nav -->
+                </div>
+                <!-- /.footer__wrap -->
+            </div>
+        </div>
+    </div>
+    <!-- footer__bottom -->
+    <div class="container__gray">
+        <div class="container">
+            <div class="footer__bottom footer-bottom">
+                <h3 class="footer-bottom__title">
+                    2021 © PLANETA-SIRIUS.RU
+                </h3>
+                <p class="footer-bottom__subtitle">Вся привeдeнная на сайте информация, носят исключительно
+                    ознакомительный характер и не является публичной офертой.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/app.min.js?_v=20220125091523"></script>
+</body>
+</html>

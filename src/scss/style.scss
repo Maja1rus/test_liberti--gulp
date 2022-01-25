@@ -1,0 +1,22 @@
+//fonts
+// @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400;500;700&display=swap");
+
+//base
+@import "./base/base";
+@import "./base/variables";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/header-top";
+@import "./blocks/header-bottom";
+@import "./blocks/header-mobile";
+@import "./blocks/filter";
+@import "./blocks/dropdown";
+@import "./blocks/content";
+@import "./blocks/sidebar";
+@import "./blocks/sidebar-price";
+@import "./blocks/sidebr-checkbox";
+@import "./blocks/card";
+@import "./blocks/footer";
+@import "./blocks/media";
+@import "./blocks/popup";

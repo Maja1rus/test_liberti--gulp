@@ -1,0 +1,108 @@
+.sidebar-price {
+    display: flex;
+    margin-top: 6px;
+
+    // .sidebar-price__input
+
+    &__input {
+        display: flex;
+        align-items: center;
+        padding: 8px 10px;
+        margin-bottom: 20px;
+        font-size: var(--normal-font-size);
+        justify-content: center;
+        background-color: var(--color-white);
+        border: 1px solid #CACCCF;
+        border-radius: 2px;
+
+        span {
+            margin-right: 4px;
+        }
+
+        input {
+            width: 52px;
+            -webkit-appearance: textfield;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    &__input+&__input {
+        margin-left: 32px;
+    }
+
+
+    // .sidebar-price__text
+
+    &__text {}
+
+    // .sidebar-price__input-min
+
+    &__input-min {}
+
+    // .sidebar-price__slider
+
+    &__slider {
+        position: relative;
+        height: 4px;
+        width: 216px;
+        background-color: #CACCCF;
+    }
+
+    // .sidebar-price__progress
+
+    &__progress {
+        position: absolute;
+        height: 4px;
+        left: 1%;
+        right: 35%;
+        background-color: var(--icon-text);
+    }
+
+    // .sidebar-price__range
+
+    &__range {
+        position: relative;
+
+        input {
+            position: absolute;
+            top: -12px;
+            width: 100%;
+            background: none;
+            pointer-events: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            pointer-events: auto;
+            background-color: var(--color-white);
+            border: 4px solid var(--icon-text);
+            border-radius: 50%;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            -moz-appearance: none;
+            height: 20px;
+            width: 20px;
+            pointer-events: auto;
+            background-color: var(--color-white);
+            border: 4px solid var(--icon-text);
+            border-radius: 50%;
+        }
+    }
+
+    // .sidebar-price__range-min
+
+    &__range-min {}
+
+    // .sidebar-price__range-max
+
+    &__range-max {}
+}
